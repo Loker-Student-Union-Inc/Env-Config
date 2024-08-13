@@ -1,8 +1,9 @@
+# Production-specific configurations
+
 spring:
   datasource:
-    url: jdbc:mysql://prod-db-server:3306/mydb
+    url: jdbc:postgresql://lsu-comet-11289.6wr.aws-us-west-2.cockroachlabs.cloud:26257/LSU?sslmode=verify-full
     username: prod_user
-    password: prod_password
-my:
-  custom:
-    property: "This is the production environment"
+    password: prod_password  # Replace with the actual password
+  application:
+    name: LSU-Game-Room-RevOps-Nexus-Prod
